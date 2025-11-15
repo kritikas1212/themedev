@@ -12,7 +12,7 @@
     "logo_width": 90,
     "type_header_font": "playball_n4",
     "heading_scale": 100,
-    "type_body_font": "playball_n4",
+    "type_body_font": "arsenal_n4",
     "body_scale": 100,
     "page_width": 1600,
     "spacing_sections": 0,
@@ -141,9 +141,9 @@
           "background": "#fae9e9",
           "background_gradient": "",
           "text": "#181818",
-          "button": "#3d2c8d",
+          "button": "#af5a78",
           "button_label": "#fafafa",
-          "secondary_button_label": "#3d2c8d",
+          "secondary_button_label": "#b43361",
           "shadow": "#121212"
         }
       },
@@ -182,7 +182,7 @@
       },
       "scheme-5": {
         "settings": {
-          "background": "#334fb4",
+          "background": "#af5a78",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",

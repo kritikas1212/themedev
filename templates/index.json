@@ -154,20 +154,11 @@
             "text": "<p>At Mystic Aura, our mission is to empower you with authentic spiritual products curated by experts. Every piece in our collection is sourced, charged, and delivered with pure intentions—helping you align your energies and unlock your best self.</p>",
             "text_style": "body"
           }
-        },
-        "button_4N7eAE": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "heading_QLYgbb",
-        "text_MQEMbY",
-        "button_4N7eAE"
+        "text_MQEMbY"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
