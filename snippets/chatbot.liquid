@@ -1,0 +1,27 @@
+<div class="chatbot-container">
+  <button class="chatbot-button" aria-label="Open chatbot" id="chatbot-toggle">💬</button>
+
+  <div class="chatbot-window" id="chatbot-window">
+    <div class="chatbot-header">
+      <h3>Chat with us</h3>
+      <button class="chatbot-close" id="chatbot-close" aria-label="Close chatbot">×</button>
+    </div>
+
+    <div class="chatbot-messages" id="chatbot-messages">
+      <div class="chatbot-message chatbot-message-bot">
+        <p>{{ settings.chatbot_welcome_message | default: 'Hello! How can I help you today?' }}</p>
+      </div>
+    </div>
+
+    <div class="chatbot-input-container">
+      <input
+        type="text"
+        class="chatbot-input"
+        id="chatbot-input"
+        placeholder="Type your message..."
+        aria-label="Chat input"
+      >
+      <button class="chatbot-send" id="chatbot-send" aria-label="Send message">Send</button>
+    </div>
+  </div>
+</div>

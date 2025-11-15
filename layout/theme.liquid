@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="js" lang="{{ request.locale.iso_code }}">
+<html class="js" lang="{{ request.locale.iso_code }}" data-theme="light">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -372,5 +372,19 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    {% comment %} Dark Mode Toggle {% endcomment %}
+    <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+
+    {% comment %} Gemini Chatbot {% endcomment %}
+    {% if settings.chatbot_enabled %}
+      {% render 'chatbot' %}
+      <script>
+        window.chatbotSettings = {
+          geminiApiKey: '{{ settings.gemini_api_key }}',
+        };
+      </script>
+      <script src="{{ 'chatbot.js' | asset_url }}" defer="defer"></script>
+    {% endif %}
   </body>
 </html>

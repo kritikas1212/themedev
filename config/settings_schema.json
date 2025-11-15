@@ -1451,5 +1451,34 @@
         "default": "scheme-1"
       }
     ]
+  },
+  {
+    "name": "Chatbot Settings",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Gemini AI Chatbot"
+      },
+      {
+        "type": "checkbox",
+        "id": "chatbot_enabled",
+        "label": "Enable Chatbot",
+        "default": true,
+        "info": "Show/hide the chatbot widget on your store"
+      },
+      {
+        "type": "text",
+        "id": "gemini_api_key",
+        "label": "Gemini API Key",
+        "info": "Add your Google Gemini API key here. Leave empty to use mock responses."
+      },
+      {
+        "type": "text",
+        "id": "chatbot_welcome_message",
+        "label": "Welcome Message",
+        "default": "Hello! How can I help you today?",
+        "info": "Initial message shown when chatbot opens"
+      }
+    ]
   }
 ]
