@@ -17,9 +17,11 @@
   // Initialize theme on page load (before DOM ready to prevent flash)
   function initTheme() {
     const html = document.documentElement;
-    const savedTheme = localStorage.getItem('mysticAura-theme') || 'light';
-    html.setAttribute('data-theme', savedTheme);
-    updateThemeIcon(savedTheme);
+    // Default to light theme if no preference is saved
+    const savedTheme = localStorage.getItem('mysticAura-theme');
+    const theme = savedTheme || 'light'; // Explicitly default to 'light'
+    html.setAttribute('data-theme', theme);
+    updateThemeIcon(theme);
   }
 
   // Apply theme immediately to prevent flash
@@ -30,9 +32,10 @@
     const html = document.documentElement;
     
     // Get saved theme preference or default to light
-    const savedTheme = localStorage.getItem('mysticAura-theme') || 'light';
-    html.setAttribute('data-theme', savedTheme);
-    updateThemeIcon(savedTheme);
+    const savedTheme = localStorage.getItem('mysticAura-theme');
+    const theme = savedTheme || 'light'; // Explicitly default to 'light'
+    html.setAttribute('data-theme', theme);
+    updateThemeIcon(theme);
 
     if (themeToggle) {
       themeToggle.addEventListener('click', function(e) {
