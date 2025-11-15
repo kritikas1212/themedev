@@ -171,7 +171,8 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "height": "adapt",
+        "image": "shopify://shop_images/IMG_7072_ad253b9c-359f-4840-9b4a-9e50dfe1424a.webp",
+        "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "image_behavior": "none",
@@ -190,7 +191,9 @@
       "blocks": {
         "image_KNXi74": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/Dhan_Vriddhi_Bracelet_Raw_Selenite_Plate_FREE_f4056f92-f5c1-4dbf-b306-cdb3abdcbc42.webp"
+          }
         },
         "product_hHG6yw": {
           "type": "product",
