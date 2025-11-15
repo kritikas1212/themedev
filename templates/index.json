@@ -9,51 +9,60 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "slideshow_TECwzn": {
+      "type": "slideshow",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "slide_YEwJDC": {
+          "type": "slide",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
+            "image": "shopify://shop_images/Screenshot_2025-11-15_at_11.51.03_PM.png",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://products/7-horses-on-raw-pyrite-frame",
+            "button_style_secondary": true,
+            "show_text_box": false,
+            "box_align": "bottom-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "color_scheme": ""
           }
         },
-        "text": {
-          "type": "text",
+        "slide_b7ndRG": {
+          "type": "slide",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "image": "shopify://shop_images/Screenshot_2025-11-15_at_11.51.43_PM.png",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://products/dhan-yog-bracelet-lab-certified",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "color_scheme": ""
           }
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
+        "slide_YEwJDC",
+        "slide_b7ndRG"
       ],
+      "name": "t:sections.slideshow.presets.name",
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
         "image_behavior": "none",
-        "desktop_content_position": "bottom-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "scheme-3",
-        "stack_images_on_mobile": false,
-        "mobile_content_alignment": "center",
-        "show_text_below": false
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
       }
     },
     "featured_collection": {
@@ -61,7 +70,7 @@
       "settings": {
         "collection": "all",
         "products_to_show": 8,
-        "title": "Featured products",
+        "title": "Explore Our Divine Collection",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -83,10 +92,183 @@
         "padding_top": 28,
         "padding_bottom": 36
       }
+    },
+    "product_reel_grid_yaLTmK": {
+      "type": "product-reel-grid",
+      "blocks": {
+        "video_link_TyaKbU": {
+          "type": "video_link",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_muted": true,
+            "caption": "“The 7 Horses Frame truly transformed the energy in my workspace. Highly recommended!”— Priya S."
+          }
+        },
+        "video_link_4ChCCt": {
+          "type": "video_link",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_muted": true,
+            "caption": ""
+          }
+        },
+        "video_link_Pr48Bg": {
+          "type": "video_link",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_muted": true,
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_link_TyaKbU",
+        "video_link_4ChCCt",
+        "video_link_Pr48Bg"
+      ],
+      "disabled": true,
+      "name": "Product Reel Grid",
+      "settings": {
+        "heading": "Product Reels",
+        "heading_size": "h1",
+        "columns_desktop": "4",
+        "columns_mobile": "2",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_4DycwJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_QLYgbb": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Mystic Aura",
+            "heading_size": "h1"
+          }
+        },
+        "text_MQEMbY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Mystic Aura, our mission is to empower you with authentic spiritual products curated by experts. Every piece in our collection is sourced, charged, and delivered with pure intentions—helping you align your energies and unlock your best self.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_4N7eAE": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_QLYgbb",
+        "text_MQEMbY",
+        "button_4N7eAE"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/IMG_7072_ad253b9c-359f-4840-9b4a-9e50dfe1424a.webp",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collage_dLr9ek": {
+      "type": "collage",
+      "blocks": {
+        "image_KNXi74": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Dhan_Vriddhi_Bracelet_Raw_Selenite_Plate_FREE_f4056f92-f5c1-4dbf-b306-cdb3abdcbc42.webp"
+          }
+        },
+        "product_hHG6yw": {
+          "type": "product",
+          "settings": {
+            "product": "7-horses-on-raw-pyrite-frame",
+            "second_image": false
+          }
+        },
+        "product_JDwtRA": {
+          "type": "product",
+          "settings": {
+            "product": "dhan-yog-bracelet-lab-certified",
+            "second_image": false
+          }
+        }
+      },
+      "block_order": [
+        "image_KNXi74",
+        "product_hHG6yw",
+        "product_JDwtRA"
+      ],
+      "name": "t:sections.collage.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_8rLXw4": {
+      "type": "rich-text",
+      "blocks": {
+        "text_fy6jJB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Explore our full collection and experience the power of positive energy—every day.</p>"
+          }
+        },
+        "button_jW6tik": {
+          "type": "button",
+          "settings": {
+            "button_label": "Begin Exploring",
+            "button_link": "shopify://collections",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_fy6jJB",
+        "button_jW6tik"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "slideshow_TECwzn",
+    "featured_collection",
+    "product_reel_grid_yaLTmK",
+    "image_with_text_4DycwJ",
+    "collage_dLr9ek",
+    "rich_text_8rLXw4"
   ]
 }
