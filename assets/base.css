@@ -3601,6 +3601,8 @@ details-disclosure > details {
    ============================================ */
 
 /* Dark Mode CSS Variables */
+/* Colors are configurable via Theme Settings > Dark Mode Settings */
+/* Default values are used if not configured in theme.liquid */
 [data-theme="dark"] {
   --mystic-text-dark: #f9fafb;
   --mystic-bg-dark: #111827;
@@ -3828,6 +3830,336 @@ body {
 [data-theme="dark"] .banner__content {
   position: relative;
   z-index: 1;
+}
+
+/* ============================================
+   Dark Mode - Comprehensive Coverage
+   ============================================ */
+
+/* CRITICAL: Protect images, videos, and reels from dark mode inversion */
+[data-theme="dark"] img,
+[data-theme="dark"] video,
+[data-theme="dark"] iframe,
+[data-theme="dark"] .product-card__media img,
+[data-theme="dark"] .product__media img,
+[data-theme="dark"] .product-reel-grid__video,
+[data-theme="dark"] .product-reel-grid__video iframe,
+[data-theme="dark"] .product-reel-grid__video video,
+[data-theme="dark"] .banner__media img,
+[data-theme="dark"] .banner__media video,
+[data-theme="dark"] .media img,
+[data-theme="dark"] .media video {
+  filter: none !important;
+  opacity: 1 !important;
+  /* Images and videos maintain original appearance */
+}
+
+/* All containers and sections - comprehensive background coverage */
+[data-theme="dark"] .section,
+[data-theme="dark"] .shopify-section,
+[data-theme="dark"] .section-group,
+[data-theme="dark"] .container,
+[data-theme="dark"] .content-container,
+[data-theme="dark"] .content-for-layout,
+[data-theme="dark"] #MainContent,
+[data-theme="dark"] .main-content {
+  background-color: var(--mystic-bg-dark) !important;
+  color: var(--mystic-text-dark) !important;
+}
+
+/* All padding and spacing containers */
+[data-theme="dark"] .section-padding,
+[data-theme="dark"] .section-*-padding,
+[data-theme="dark"] .spacing-section,
+[data-theme="dark"] .spacing-container {
+  background-color: var(--mystic-bg-dark) !important;
+}
+
+/* Cards and product cards */
+[data-theme="dark"] .card,
+[data-theme="dark"] .product-card,
+[data-theme="dark"] .product-card-wrapper,
+[data-theme="dark"] .collection-card,
+[data-theme="dark"] .article-card,
+[data-theme="dark"] .card__inner,
+[data-theme="dark"] .card__content {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border-color: var(--mystic-border-dark) !important;
+  color: var(--mystic-text-dark) !important;
+}
+
+/* Form elements - comprehensive coverage */
+[data-theme="dark"] input[type="text"],
+[data-theme="dark"] input[type="email"],
+[data-theme="dark"] input[type="password"],
+[data-theme="dark"] input[type="number"],
+[data-theme="dark"] input[type="tel"],
+[data-theme="dark"] input[type="search"],
+[data-theme="dark"] input[type="url"],
+[data-theme="dark"] textarea,
+[data-theme="dark"] select,
+[data-theme="dark"] .field__input,
+[data-theme="dark"] .form__input,
+[data-theme="dark"] .select__select,
+[data-theme="dark"] .customer input,
+[data-theme="dark"] .customer textarea,
+[data-theme="dark"] .customer select {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: var(--mystic-border-dark) !important;
+  color: var(--mystic-text-dark) !important;
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+  color: rgba(249, 250, 251, 0.6) !important;
+}
+
+[data-theme="dark"] input:focus,
+[data-theme="dark"] textarea:focus,
+[data-theme="dark"] select:focus {
+  border-color: #818cf8 !important;
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Buttons - comprehensive coverage */
+[data-theme="dark"] .button,
+[data-theme="dark"] button:not(.theme-toggle):not(.chatbot-button),
+[data-theme="dark"] .btn,
+[data-theme="dark"] input[type="submit"],
+[data-theme="dark"] input[type="button"] {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: var(--mystic-text-dark) !important;
+  border-color: var(--mystic-border-dark) !important;
+}
+
+[data-theme="dark"] .button:hover,
+[data-theme="dark"] button:hover:not(.theme-toggle):not(.chatbot-button) {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: var(--mystic-text-dark) !important;
+}
+
+[data-theme="dark"] .button--primary,
+[data-theme="dark"] .button--secondary {
+  background-color: rgba(99, 102, 241, 0.8) !important;
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .button--primary:hover,
+[data-theme="dark"] .button--secondary:hover {
+  background-color: rgba(99, 102, 241, 1) !important;
+}
+
+/* Footer - comprehensive coverage */
+[data-theme="dark"] .footer,
+[data-theme="dark"] .footer-wrapper,
+[data-theme="dark"] .footer__content-top,
+[data-theme="dark"] .footer__content-bottom,
+[data-theme="dark"] .footer__blocks-wrapper,
+[data-theme="dark"] .footer-block {
+  background-color: rgba(17, 24, 39, 0.95) !important;
+  color: var(--mystic-text-dark) !important;
+  border-color: var(--mystic-border-dark) !important;
+}
+
+[data-theme="dark"] .footer__heading,
+[data-theme="dark"] .footer__title {
+  color: var(--mystic-text-dark) !important;
+}
+
+/* Navigation drawers and modals */
+[data-theme="dark"] .menu-drawer,
+[data-theme="dark"] .drawer,
+[data-theme="dark"] .cart-drawer,
+[data-theme="dark"] .modal,
+[data-theme="dark"] .popup {
+  background-color: var(--mystic-bg-dark) !important;
+  color: var(--mystic-text-dark) !important;
+  border-color: var(--mystic-border-dark) !important;
+}
+
+[data-theme="dark"] .menu-drawer__inner-container,
+[data-theme="dark"] .drawer__inner {
+  background-color: var(--mystic-bg-dark) !important;
+}
+
+/* Breadcrumbs */
+[data-theme="dark"] .breadcrumbs,
+[data-theme="dark"] .breadcrumb {
+  background-color: transparent !important;
+  color: var(--mystic-text-dark) !important;
+}
+
+[data-theme="dark"] .breadcrumb__link {
+  color: var(--mystic-text-dark) !important;
+}
+
+[data-theme="dark"] .breadcrumb__link:hover {
+  color: #818cf8 !important;
+}
+
+/* Pagination */
+[data-theme="dark"] .pagination,
+[data-theme="dark"] .pagination__list,
+[data-theme="dark"] .pagination__item {
+  background-color: transparent !important;
+  color: var(--mystic-text-dark) !important;
+}
+
+[data-theme="dark"] .pagination__link {
+  color: var(--mystic-text-dark) !important;
+  border-color: var(--mystic-border-dark) !important;
+}
+
+[data-theme="dark"] .pagination__link:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: var(--mystic-text-dark) !important;
+}
+
+[data-theme="dark"] .pagination__link--current {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: var(--mystic-text-dark) !important;
+}
+
+/* Search results */
+[data-theme="dark"] .search-results,
+[data-theme="dark"] .predictive-search,
+[data-theme="dark"] .search__results {
+  background-color: var(--mystic-bg-dark) !important;
+  border-color: var(--mystic-border-dark) !important;
+}
+
+[data-theme="dark"] .predictive-search__item,
+[data-theme="dark"] .search-result-item {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border-color: var(--mystic-border-dark) !important;
+}
+
+[data-theme="dark"] .predictive-search__item:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Tables */
+[data-theme="dark"] table,
+[data-theme="dark"] thead,
+[data-theme="dark"] tbody,
+[data-theme="dark"] tr {
+  background-color: transparent !important;
+  border-color: var(--mystic-border-dark) !important;
+}
+
+[data-theme="dark"] th,
+[data-theme="dark"] td {
+  border-color: var(--mystic-border-dark) !important;
+  color: var(--mystic-text-dark) !important;
+}
+
+/* Dividers and borders */
+[data-theme="dark"] hr,
+[data-theme="dark"] .separator,
+[data-theme="dark"] .divider,
+[data-theme="dark"] .border {
+  border-color: var(--mystic-border-dark) !important;
+  background-color: var(--mystic-border-dark) !important;
+}
+
+/* Announcement bar */
+[data-theme="dark"] .announcement-bar,
+[data-theme="dark"] .announcement-bar-section {
+  background-color: rgba(17, 24, 39, 0.9) !important;
+  color: var(--mystic-text-dark) !important;
+  border-color: var(--mystic-border-dark) !important;
+}
+
+/* Utility classes */
+[data-theme="dark"] .gradient {
+  background: var(--mystic-bg-dark) !important;
+}
+
+/* Shadows and overlays */
+[data-theme="dark"] .shadow,
+[data-theme="dark"] .overlay {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Loading spinners */
+[data-theme="dark"] .loading__spinner,
+[data-theme="dark"] .spinner {
+  border-color: var(--mystic-border-dark) !important;
+  border-top-color: var(--mystic-text-dark) !important;
+}
+
+/* Product reel grid - ensure proper dark mode */
+[data-theme="dark"] .product-reel-grid {
+  background-color: var(--mystic-bg-dark) !important;
+}
+
+[data-theme="dark"] .product-reel-grid__heading {
+  color: var(--mystic-text-dark) !important;
+}
+
+/* Collection filters */
+[data-theme="dark"] .facets,
+[data-theme="dark"] .facets__form,
+[data-theme="dark"] .facets__wrapper {
+  background-color: var(--mystic-bg-dark) !important;
+  border-color: var(--mystic-border-dark) !important;
+}
+
+[data-theme="dark"] .facets__summary,
+[data-theme="dark"] .facets__header {
+  color: var(--mystic-text-dark) !important;
+}
+
+[data-theme="dark"] .facets__list {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+[data-theme="dark"] .facets__item label {
+  color: var(--mystic-text-dark) !important;
+}
+
+/* Cart and checkout elements */
+[data-theme="dark"] .cart,
+[data-theme="dark"] .cart__items,
+[data-theme="dark"] .cart-item {
+  background-color: transparent !important;
+  border-color: var(--mystic-border-dark) !important;
+}
+
+[data-theme="dark"] .cart-item__title,
+[data-theme="dark"] .cart-item__name {
+  color: var(--mystic-text-dark) !important;
+}
+
+/* Product form elements */
+[data-theme="dark"] .product-form,
+[data-theme="dark"] .product-form__input,
+[data-theme="dark"] .product-form__quantity {
+  background-color: transparent !important;
+}
+
+[data-theme="dark"] .quantity__button {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: var(--mystic-border-dark) !important;
+  color: var(--mystic-text-dark) !important;
+}
+
+[data-theme="dark"] .quantity__input {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: var(--mystic-border-dark) !important;
+  color: var(--mystic-text-dark) !important;
+}
+
+/* Variant selectors */
+[data-theme="dark"] .product-form__input input[type="radio"]:checked + label {
+  background-color: rgba(99, 102, 241, 0.3) !important;
+  border-color: #818cf8 !important;
+  color: var(--mystic-text-dark) !important;
+}
+
+[data-theme="dark"] .product-form__input input[type="radio"] + label {
+  border-color: var(--mystic-border-dark) !important;
+  color: var(--mystic-text-dark) !important;
 }
 
 /* ============================================

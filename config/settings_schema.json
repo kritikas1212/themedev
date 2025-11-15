@@ -1453,6 +1453,36 @@
     ]
   },
   {
+    "name": "Dark Mode Settings",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Dark Mode Theme Colors"
+      },
+      {
+        "type": "color",
+        "id": "dark_mode_bg",
+        "label": "Dark Mode Background Color",
+        "default": "#111827",
+        "info": "Background color for dark mode"
+      },
+      {
+        "type": "color",
+        "id": "dark_mode_text",
+        "label": "Dark Mode Text Color",
+        "default": "#f9fafb",
+        "info": "Text color for dark mode"
+      },
+      {
+        "type": "color",
+        "id": "dark_mode_border",
+        "label": "Dark Mode Border Color",
+        "default": "#374151",
+        "info": "Border color for dark mode"
+      }
+    ]
+  },
+  {
     "name": "Chatbot Settings",
     "settings": [
       {

@@ -39,6 +39,14 @@
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
+    {%- style -%}
+      /* Dark Mode CSS Variables - Configurable via Theme Settings */
+      [data-theme="dark"] {
+        --mystic-text-dark: {{ settings.dark_mode_text | default: '#f9fafb' }};
+        --mystic-bg-dark: {{ settings.dark_mode_bg | default: '#111827' }};
+        --mystic-border-dark: {{ settings.dark_mode_border | default: '#374151' }};
+      }
+    {%- endstyle -%}
     {{ content_for_header }}
 
     {%- liquid
@@ -54,6 +62,9 @@
       {{ body_font_bold_italic | font_face: font_display: 'swap' }}
       {{ settings.type_header_font | font_face: font_display: 'swap' }}
 
+      {%- liquid
+        assign scheme_classes = ''
+      -%}
       {% for scheme in settings.color_schemes -%}
         {% assign scheme_classes = scheme_classes | append: ', .color-' | append: scheme.id %}
         {% if forloop.index == 1 -%}

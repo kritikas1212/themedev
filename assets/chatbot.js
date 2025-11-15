@@ -1,5 +1,15 @@
 /**
  * Gemini AI Chatbot
+ *
+ * Features:
+ * - Real-time AI responses via Google Gemini API
+ * - Intelligent mock responses when API unavailable
+ * - Chat history persistence in localStorage
+ * - Smooth UI interactions
+ * - Error handling and fallbacks
+ *
+ * @author MysticAura Theme
+ * @version 1.0.0
  */
 (function () {
   'use strict';
