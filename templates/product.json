@@ -203,24 +203,27 @@
       },
       "blocks": {
         "reel-1": {
-          "type": "video_link",
+          "type": "video_unified",
           "settings": {
             "video_url": "",
-            "caption": ""
+            "caption": "",
+            "video_muted": true
           }
         },
         "reel-2": {
-          "type": "video_link",
+          "type": "video_unified",
           "settings": {
             "video_url": "",
-            "caption": ""
+            "caption": "",
+            "video_muted": true
           }
         },
         "reel-3": {
-          "type": "video_link",
+          "type": "video_unified",
           "settings": {
             "video_url": "",
-            "caption": ""
+            "caption": "",
+            "video_muted": true
           }
         }
       },

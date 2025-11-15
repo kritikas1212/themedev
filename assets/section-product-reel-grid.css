@@ -18,15 +18,15 @@
 .product-reel-grid__video-wrapper {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625 = 56.25%) */
+  padding-bottom: 177.78%; /* 9:16 aspect ratio (16/9 = 1.7778 = 177.78%) - standard for Reels/Shorts */
   overflow: hidden;
   border-radius: 0.8rem;
   background-color: rgba(var(--color-foreground), 0.05);
+  max-width: 400px; /* Limit width for vertical videos */
+  margin: 0 auto; /* Center vertical videos */
 }
 
-/* Vertical reel/short format (9:16 aspect ratio)
-   Instagram Reels, YouTube Shorts, and TikTok all use 9:16 (vertical portrait)
-   Formula: (16/9) * 100 = 177.78% */
+/* Legacy class for backward compatibility - now same as default */
 .product-reel-grid__video-wrapper--reel {
   padding-bottom: 177.78%; /* 9:16 aspect ratio - standard for Reels/Shorts */
   max-width: 400px; /* Limit width for vertical videos */
@@ -34,6 +34,7 @@
 }
 
 @media screen and (max-width: 749px) {
+  .product-reel-grid__video-wrapper,
   .product-reel-grid__video-wrapper--reel {
     max-width: 100%; /* Full width on mobile for better viewing */
   }
