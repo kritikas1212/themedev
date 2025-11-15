@@ -3910,6 +3910,101 @@ body {
   display: block !important;
 }
 
+/* Mobile Fixes - Remove extra space and prevent cropping (Both Light & Dark Mode) */
+@media screen and (max-width: 749px) {
+  /* Remove extra padding/margin below images */
+  .banner__media::before,
+  .slideshow__media::before,
+  .banner::before,
+  .slideshow::before {
+    display: none !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    content: none !important;
+  }
+
+  /* Ensure containers adapt to image height without extra space */
+  .banner__media,
+  .slideshow__media,
+  .banner .media,
+  .slideshow .media {
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    position: relative !important;
+  }
+
+  /* Make images display at natural aspect ratio without cropping */
+  .banner__media img,
+  .slideshow__media img,
+  .banner img,
+  .slideshow img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 80vh !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    display: block !important;
+    position: relative !important;
+  }
+
+  /* Remove fixed heights that cause extra space and cropping */
+  .banner--small .banner__media,
+  .banner--small.banner--mobile-bottom .banner__media,
+  .banner--small.banner--stacked .banner__media,
+  .banner--medium .banner__media,
+  .banner--medium.banner--mobile-bottom .banner__media,
+  .banner--medium.banner--stacked .banner__media,
+  .banner--large .banner__media,
+  .banner--large.banner--mobile-bottom .banner__media,
+  .banner--large.banner--stacked .banner__media,
+  .slideshow__media,
+  .slideshow--placeholder .slideshow__media {
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+  /* Remove min-height from content that creates extra space */
+  .banner--small .banner__content,
+  .banner--medium .banner__content,
+  .banner--large .banner__content {
+    min-height: auto !important;
+  }
+
+  /* Ensure no extra space after media containers */
+  .banner__media::after,
+  .slideshow__media::after,
+  .banner--mobile-bottom::after,
+  .banner--mobile-bottom .banner__media::after {
+    display: none !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    content: none !important;
+  }
+
+  /* Fix for stacked banners on mobile */
+  .banner--stacked .banner__media {
+    height: auto !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Ensure content doesn't create extra space */
+  .banner__content,
+  .slideshow__text-wrapper {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* Ensure banner and slideshow containers don't add extra space */
+  .banner,
+  .slideshow {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
 /* All containers and sections - comprehensive background coverage */
 [data-theme="dark"] .section,
 [data-theme="dark"] .shopify-section,
