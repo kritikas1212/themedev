@@ -1130,6 +1130,9 @@ summary::-webkit-details-marker {
   object-fit: cover;
   object-position: center center;
   transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .media--square {
@@ -3847,11 +3850,64 @@ body {
 [data-theme="dark"] .product-reel-grid__video video,
 [data-theme="dark"] .banner__media img,
 [data-theme="dark"] .banner__media video,
+[data-theme="dark"] .slideshow__media img,
+[data-theme="dark"] .slideshow__media video,
 [data-theme="dark"] .media img,
 [data-theme="dark"] .media video {
   filter: none !important;
   opacity: 1 !important;
   /* Images and videos maintain original appearance */
+}
+
+/* Ensure banner and slideshow images display fully in all themes and devices */
+[data-theme="dark"] .banner__media,
+[data-theme="dark"] .slideshow__media,
+[data-theme="dark"] .banner__media img,
+[data-theme="dark"] .slideshow__media img,
+[data-theme="dark"] .banner img,
+[data-theme="dark"] .slideshow img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  display: block !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Ensure media containers don't clip images in dark mode */
+[data-theme="dark"] .banner__media,
+[data-theme="dark"] .slideshow__media,
+[data-theme="dark"] .banner__media.media,
+[data-theme="dark"] .slideshow__media.media,
+[data-theme="dark"] .banner .media,
+[data-theme="dark"] .slideshow .media {
+  overflow: visible !important;
+  position: relative !important;
+  z-index: 1 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Light mode - ensure containers don't clip images */
+.banner__media,
+.slideshow__media,
+.banner .media,
+.slideshow .media {
+  overflow: visible !important;
+}
+
+/* Light mode - ensure consistent image display */
+.banner__media img,
+.slideshow__media img,
+.banner img,
+.slideshow img,
+.media img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  display: block !important;
 }
 
 /* All containers and sections - comprehensive background coverage */
