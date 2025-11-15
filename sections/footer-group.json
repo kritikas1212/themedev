@@ -18,14 +18,14 @@
           "type": "link_list",
           "settings": {
             "heading": "Quick links",
-            "menu": "footer"
+            "menu": "footer-1"
           }
         },
         "footer-1": {
           "type": "link_list",
           "settings": {
             "heading": "Info",
-            "menu": "footer"
+            "menu": "footer-2"
           }
         },
         "footer-2": {
